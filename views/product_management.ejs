@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet" href="css/product_management.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- end of Bootstrap css cdn link -->
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet"/>
+    
+</head>
+
+<body>
+
+    
+
+    <!-- main section -->
+    <main class="main-container" style="min-height: 77vh;">
+        <div class="container-fluid">
+            <div class="row p-0">
+                <div class="col-12 m-0 d-flex p-0">
+                    <div class="container-box">  
+
+                    <!-- admin dashboard section -->
+                        <p class="constant-txt">Admin Time Trove</p>
+                        <div class="management-txt">
+                            <ul>
+                                <li><a href="/adminHome">Dashboard</a></li>
+                                <li><a href="/add-product">Add Product</a></li>
+                                <li><a href="/user-management">User Management</a></li>
+                                <li><a href="/adminProductManagement">Product Management</a></li>
+                                <li><a href="/category-management">Category Management</a></li>
+                                <li><a href="#">Order Management</a></li>
+                                <li><a href="#">Coupon Management</a></li>
+                            </ul>
+                            <!-- <div class="log-div" style=" display:flex; justify-content: end;"> -->
+                                <form action="/ad-logout" method="post"><button class="logout-btn">
+                                    <svg class="logout-svg" width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.8118 24.632H27.1455C26.9635 24.632 26.7928 24.7116 26.679 24.8518C26.4135 25.1739 26.1291 25.4846 25.8294 25.7802C24.604 27.0059 23.1524 27.9826 21.555 28.6565C19.9001 29.3549 18.1213 29.7132 16.3248 29.71C14.5081 29.71 12.7483 29.3537 11.0946 28.6565C9.49723 27.9826 8.04566 27.0059 6.8202 25.7802C5.59255 24.5587 4.61365 23.1109 3.93771 21.517C3.23606 19.8648 2.88333 18.1102 2.88333 16.295C2.88333 14.4798 3.23985 12.7253 3.93771 11.0731C4.61282 9.47767 5.58377 8.04144 6.8202 6.80984C8.05664 5.57824 9.49409 4.60812 11.0946 3.93359C12.7483 3.23631 14.5081 2.8801 16.3248 2.8801C18.1416 2.8801 19.9014 3.23252 21.555 3.93359C23.1556 4.60812 24.593 5.57824 25.8294 6.80984C26.1291 7.10921 26.4097 7.41995 26.679 7.73827C26.7928 7.87849 26.9673 7.95807 27.1455 7.95807H29.8118C30.0508 7.95807 30.1987 7.6928 30.0659 7.49195C27.1569 2.97484 22.067 -0.0151007 16.2831 5.73684e-05C7.19568 0.0227945 -0.0901822 7.39343 0.000843713 16.4618C0.0918696 25.3861 7.36636 32.59 16.3248 32.59C22.0936 32.59 27.1607 29.6039 30.0659 25.0981C30.1949 24.8973 30.0508 24.632 29.8118 24.632ZM33.1836 16.0563L27.8017 11.812C27.6007 11.6529 27.3086 11.7969 27.3086 12.0508V14.9308H15.3994C15.2325 14.9308 15.096 15.0672 15.096 15.234V17.3561C15.096 17.5228 15.2325 17.6593 15.3994 17.6593H27.3086V20.5393C27.3086 20.7932 27.6045 20.9372 27.8017 20.778L33.1836 16.5338C33.2198 16.5054 33.2492 16.4692 33.2693 16.4278C33.2895 16.3864 33.3 16.341 33.3 16.295C33.3 16.249 33.2895 16.2036 33.2693 16.1622C33.2492 16.1209 33.2198 16.0846 33.1836 16.0563Z" fill="white"/>
+                                        </svg>
+                                        
+                                    Logout</button></form>
+                            <!-- </div> -->
+                        </div>
+                        
+
+                        <section id="content">
+
+                            <!-- MAIN -->
+                        <div class="dashboard-containerbox"> 
+                            <main>
+                              <!-- product updated success msg -->
+                              <div class="updateproduct-success">
+                                <% if (updateproductSuccess && !messageDisplayed) { %>
+                                    <div class="updateproduct-successBox" id="success-box">  
+                                        <p id="updateproductSuccessMessage">Product updated successfully!</p>
+                                    </div>
+                                <% } %>
+                              </div>
+                            <!-- end of updated added success msg -->
+
+                            <!-- product deleted success msg -->
+                            <div class="deleteproduct-success">
+                              <% if (productDeleteSuccess && !deletedMessageDisplayed) { %>
+                                  <div class="deleteproduct-successBox" id="success-box">  
+                                      <p id="deleteproductSuccessMessage">Product deleted successfully!</p>
+                                  </div>
+                              <% } %>
+                            </div>
+                          <!-- end of deleted added success msg -->
+
+                                <!-- <div class="popup" id="confirmation-popup">
+                                  <h2>Confirmation</h2>
+                                  <p>Are you sure you want to Delete <span class="cName text-capitalize"></span> Product?</p>
+                                  <a class="dCat">
+                                    <button id="confirm-btn">Yes</button>
+                                  </a>
+                                  <a>
+                                    <button id="cancel-btn">No</button>
+                                  </a>
+                                </div> -->
+                        
+                                <div class="head-title">
+                                  <div class="left">
+                                    <h1>Product Management</h1>
+                                    
+                                  </div>
+                                </div>
+                        
+                                <div class="manageOptions">
+                                  <a href="/add-product">
+                                    <button>Add Product</button>
+                                  </a>
+                                  <a href="/adminUnlisted-product">
+                                    <button>Go To Unlisted Product</button>
+                                  </a>
+                                </div>
+                        
+                                <div class="table-data justify-content-center">
+                                  <div class="order">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <h2>Search Product to Manage</h2>
+                                      <div class="d-flex">
+                                        <form action="/adminFilterProducts" method="get">
+
+                                          <input type="text"placeholder="Search by Name"name="Search"spellcheck="false"required/>
+                                          <button type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 16 16"fill="none">
+                                              <path d="M14.3333 15.6101L9.08333 10.3455C8.66667 10.6798 8.1875 10.9444 7.64583 11.1394C7.10417 11.3343 6.52778 11.4318 5.91667 11.4318C4.40278 11.4318 3.12153 10.9061 2.07292 9.85454C1.02431 8.803 0.5 7.51818 0.5 6.00007C0.5 4.48196 1.02431 3.19714 2.07292 2.1456C3.12153 1.09407 4.40278 0.568298 5.91667 0.568298C7.43056 0.568298 8.71181 1.09407 9.76042 2.1456C10.809 3.19714 11.3333 4.48196 11.3333 6.00007C11.3333 6.61289 11.2361 7.19088 11.0417 7.73406C10.8472 8.27724 10.5833 8.75774 10.25 9.17557L15.5 14.4402L14.3333 15.6101ZM5.91667 9.76053C6.95833 9.76053 7.84375 9.39493 8.57292 8.66373C9.30208 7.93253 9.66667 7.04464 9.66667 6.00007C9.66667 4.9555 9.30208 4.06761 8.57292 3.33641C7.84375 2.60521 6.95833 2.23961 5.91667 2.23961C4.875 2.23961 3.98958 2.60521 3.26042 3.33641C2.53125 4.06761 2.16667 4.9555 2.16667 6.00007C2.16667 7.04464 2.53125 7.93253 3.26042 8.66373C3.98958 9.39493 4.875 9.76053 5.91667 9.76053Z"fill="black"/>
+                                            </svg>
+                                          </button>
+
+                                        </form>
+                                      </div>
+                                    </div>
+                                    
+                                      <div class="produts">
+                                        <% for(let i=0; i<allProductDetails.length; i++) { %>
+                                          <% if (allProductDetails[i].unlisted == false) { %>
+                                          <div class="productImg d-flex align-items-center justify-content-between">
+
+
+                                            <div class="proImg d-flex gap-3 align-items-center">
+                                              <div>
+                                                  <img src="<%= allProductDetails[i].images[0] %>" alt="<%= allProductDetails[i].filename %>">
+                                                <!-- <img src="brown-strap.png" alt="No Image Uploaded" /> -->
+                                              </div>
+
+                                              <div class="description d-flex align-items-center">
+                                                <div>
+                                                  <!-- <p class="mb-1 p-0 fs-6 text-capitalize">Breda</p> -->
+                                                  <p class="mb-1 p-0 fs-6 text-capitalize"><%= allProductDetails[i].productName %></p>
+                                                  <p class="mb-2 text-capitalize"></p>
+                                                  <p class="m-0 p-0">Qty: <%= allProductDetails[i].quantity %></p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="dPrice">
+                                              <p class="mb-2 p-0">Current Discount: <%= allProductDetails[i].discount %>%</p>
+                                              <p class="m-0 p-0">MRP: ₹<%= allProductDetails[i].lastPrice %></p>
+                                            </div>
+                                            
+                                            <div class="actions d-flex align-items-center">
+
+                                              <!-- <form action="/update-product" method="post">
+                                                <input type="hidden" name="id" value=" allProductDetails[i]._id ---- here is the ejs syntax">
+                                                  <svg width="18" height="18" viewBox="0 0 18 18"fill="none"xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 16H3.425L13.2 6.225L11.775 4.8L2 14.575V16ZM0 18V13.75L13.2 0.575C13.4 0.391667 13.6208 0.25 13.8625 0.15C14.1042 0.05 14.3583 0 14.625 0C14.8917 0 15.15 0.05 15.4 0.15C15.65 0.25 15.8667 0.4 16.05 0.6L17.425 2C17.625 2.18333 17.7708 2.4 17.8625 2.65C17.9542 2.9 18 3.15 18 3.4C18 3.66667 17.9542 3.92083 17.8625 4.1625C17.7708 4.40417 17.625 4.625 17.425 4.825L4.25 18H0ZM12.475 5.525L11.775 4.8L13.2 6.225L12.475 5.525Z"fill="black"/>
+                                                  </svg>
+                                              </form> -->
+
+                                              <a href="/update-product?productId=<%= allProductDetails[i]._id %>">
+                                                <svg width="18" height="18" viewBox="0 0 18 18"fill="none"xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M2 16H3.425L13.2 6.225L11.775 4.8L2 14.575V16ZM0 18V13.75L13.2 0.575C13.4 0.391667 13.6208 0.25 13.8625 0.15C14.1042 0.05 14.3583 0 14.625 0C14.8917 0 15.15 0.05 15.4 0.15C15.65 0.25 15.8667 0.4 16.05 0.6L17.425 2C17.625 2.18333 17.7708 2.4 17.8625 2.65C17.9542 2.9 18 3.15 18 3.4C18 3.66667 17.9542 3.92083 17.8625 4.1625C17.7708 4.40417 17.625 4.625 17.425 4.825L4.25 18H0ZM12.475 5.525L11.775 4.8L13.2 6.225L12.475 5.525Z"fill="black"/>
+                                                </svg>
+                                              </a>
+
+                                              <form action="/delete-product" method="post">
+                                                <input type="hidden" name="id" value="<%= allProductDetails[i]._id  %>">
+                                                <button type="submit" style=" background-color: transparent;"><svg width="15" height="19"viewBox="0 0 15 19"fill="none"xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.07143 16.8889C1.07143 18.05 2.03571 19 3.21429 19H11.7857C12.9643 19 13.9286 18.05 13.9286 16.8889V4.22222H1.07143V16.8889ZM15 1.05556H11.25L10.1786 0H4.82143L3.75 1.05556H0V3.16667H15V1.05556Z"fill="black"/>
+                                                </svg></button>
+                                              </form>
+
+                                            </div>
+
+
+                                          </div>
+                                          <% } %>
+                                        <% } %>
+                                      </div>
+                                    
+                                    
+                                        <!-- <div class="text-center">\(^Д^)/ <br>No Products.</div> -->
+                                    
+                                  </div>
+                                </div>
+                              </main>
+                        </div>
+                            <!-- MAIN -->
+                          </section>
+                          <!-- CONTE -->
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- /main section  --> 
+
+
+
+
+     <!-- success messages js-->
+     <script>
+      // Add JavaScript to hide the message after 5 seconds
+      // update product success message
+      setTimeout(function () {
+          var updateproductSuccessMessage = document.getElementById('updateproductSuccessMessage');
+          var successBox = document.getElementById('success-box');
+  
+          if (updateproductSuccessMessage && successBox) {
+          updateproductSuccessMessage.style.display = 'none';
+          successBox.style.display = 'none';
+  
+          }
+      }, 5000);
+       // end of update product success message
+
+       // delete product success message
+      setTimeout(function () {
+          var deleteproductSuccessMessage = document.getElementById('deleteproductSuccessMessage');
+          var successBox = document.getElementById('success-box');
+  
+          if (deleteproductSuccessMessage && successBox) {
+          deleteproductSuccessMessage.style.display = 'none';
+          successBox.style.display = 'none';
+  
+          }
+      }, 5000);
+       // end of delete product success message
+  </script>
+    
+  
+
+    <script src="/adminSide/js/adminAddProduct.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/23d1247997.js" crossorigin="anonymous"></script>
+    <!-- end of fontawesome -->
+
+    <!-- Bootstrap script file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!--end of Bootstrap script file -->
+
+</body>
+</html>

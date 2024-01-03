@@ -1,0 +1,65 @@
+
+.sub-box{
+    width: 35vw;
+    height: 250px;
+    background-color: white;
+    margin-left: 19vw;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.add-txt{
+    font-size: 29px;
+    margin-left: 23vw;
+    text-decoration: none;
+    
+}
+.cat-mainhead{
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 11vw;
+    padding-top: 30px;
+}
+
+.label-txt{
+    display: block;
+    font-size: 13px;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.cat-inputbox{
+    margin-left: 70px;
+    width: 24vw;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(204, 202, 202);
+    margin-top: 4px;
+}
+.cat-btn{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 130px;
+    height: 30px;
+    font-size: 13px;
+    margin-left: 13vw;
+    margin-top: 20px;
+}
+.categoryadd-success{
+	width: 291px;
+	height: 40px;
+	/* background-color: white; */
+	/* color: #19b319; */
+	margin-left: 344px;
+	
+	/* border-radius: 5px; */
+}
+#categoryaddSuccessMessage{
+	background-color: white;
+	color: #19b319;
+	padding: 5px;
+	border-radius: 5px;
+	padding-top: 7px;
+	padding-left: 15px
+}

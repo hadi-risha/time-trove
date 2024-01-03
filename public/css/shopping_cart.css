@@ -1,0 +1,227 @@
+.main-container{
+    position: relative;
+    /* height: 100vh; */
+    width: 100vw;
+}
+.cart-head{
+    font-size: 21px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.cart-box{
+    border: 1px solid #C7C7C7;
+    width: 50vw;
+    height: 170px;
+    position: absolute; 
+    top: 150px;
+    left: 100px;
+    border-radius: 8px;
+    /* border: 1px solid #C7C7C7;
+    width: 50vw;
+    height: 170px;
+    margin-top: 50px; 
+    border-radius: 8px;
+    margin-left: -20px; */
+}
+.image-box{
+    width: 140px;
+    height: 140px;
+    margin-top: 13px;
+    margin-left: 13px;
+    background-color: antiquewhite;
+    display: flex;
+}
+.og-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.brand-name{
+    position: absolute;
+    top: 9px;
+    left: 13vw;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1d1c1c;
+}
+.remove-icon{
+    position: absolute;
+    top: 13px;
+    left: 47vw;
+    height: 15px;
+    width: 15px;
+}
+.pDescription{
+    position: absolute;
+    top: 40px;
+    left: 13vw;
+}
+.pSize{
+    position: absolute;
+    top: 71px;
+    left: 13vw;
+    background-color: #F2F2F2;
+    padding: 1px 5px 1px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(48, 46, 46);
+}
+.quantity{
+    position: absolute;
+    top: 71px;
+    left: 22vw;
+    background-color: #F2F2F2;
+    padding: 1px 5px 1px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(48, 46, 46);
+}
+.last-price{
+    position: absolute;
+    top: 101px;
+    left: 13vw;
+}
+.first-price{
+    position: absolute;
+    top: 101px;
+    left: 21vw;
+    font-size: 14px;
+    color: #6b6a6a;
+    text-decoration: line-through;
+}
+.cross-line{
+    width: 67px;
+    height: 1px;
+    position: absolute; 
+    top: 112px;
+    left: 21vw;
+    background-color: black;
+}
+.discount{
+    position: absolute;
+    top: 101px;
+    left: 28vw;
+    color: #A19202;
+}
+.return-icon{
+    color: black;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 135px;
+    left: 13vw;
+}
+.return-txt{
+    font-size: 13px;
+    color: black;
+    position: absolute;
+    top: 130px;
+    left: 14.5vw;
+}
+.login-txt{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 290px;
+    left: -4.4vw;
+}
+.payment-box{
+    margin-left: 45vw;
+    border: 1px solid #CFCDCD;
+    /* margin-top: 10px; */
+    border-radius: 8px;
+    height: 360px;
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+}
+.details{
+    color: #858383;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.details-line{
+    background-color: #D7D5D5;
+    width: 348px;
+    height: 1px;
+    margin-top: -10px;
+}
+.total-price{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.tPrice{
+    padding-left: 270px;
+    position: absolute;
+    top: 50px;
+    font-weight: 500;
+}
+.shipping-txt{
+    padding-left: 20px;
+    position: absolute;
+    top: 75px;
+}
+.free-txt{
+    padding-left: 295px;
+    position: absolute;
+    top: 75px;
+}
+.dis-txt{
+    padding-left: 20px;
+    position: absolute;
+    top: 102px;
+}
+.dis-price{
+    padding-left: 235px;
+    position: absolute;
+    top: 102px;
+}
+.dis-txt{
+    padding-left: 20px;
+    position: absolute;
+    top: 102px;
+}
+.coupon-txt{
+    padding-left: 20px;
+    position: absolute;
+    top: 129px;
+}
+.code{
+    padding-left: 252px;
+    position: absolute;
+    top: 129px;
+}
+.coupon-code{
+    padding: 0px 10px 0px 10px;
+    position: absolute;
+    top: 219px;
+    border: 1px solid #CECECE;
+    margin-left: 4vw;
+    font-weight: 500;
+    font-size: 14px;
+}
+.apply-button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 24px;
+    position: absolute;
+    top: 219px;
+    left: 14vw;
+    font-size: 14px;
+}
+.final-btn{
+    background-color: #E39B46;
+    color: white;
+    border: none;
+    width: 243px;
+    height: 33px;
+    position: absolute;
+    top: 279px;
+    left: 4vw;
+    font-size: 14px;
+    border-radius: 10px;
+    
+}

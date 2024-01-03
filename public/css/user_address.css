@@ -1,0 +1,218 @@
+.main-container{
+    height: 115vh;
+    position: relative;
+    display: flex;
+}
+/* .profile-icon{
+    width: 50px;
+    height: 50px;
+} */
+
+.profile-icon{
+    background-color: rgb(255, 255, 255);
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 33px;
+    left: 12.5vw;
+}
+.main-head{
+    font-weight: 500;
+    font-size: 17px;
+    position: absolute;
+    top: 28px;
+    left: 16vw;
+}
+.user-name{
+    font-size: 19px;
+    position: absolute;
+    top: 51px;
+    left: 16vw;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.finishing-line1{
+    width: 74vw;
+    height: 1px;
+    background-color: #b3a3a3;
+    margin-top: 100px;
+    margin-left: 12.5vw;
+}
+.left-line{
+    position: absolute;
+    width: 1px;
+    height: 470px;
+    background-color: #b3a3a3;
+    left: 350px;
+}
+.headings{
+    margin-left: 12.5vw; 
+    color: #948e8e;
+    font-size: 12px;
+    padding-top: 23px;
+}
+.orders{
+    margin-left: 12.5vw; 
+    font-size: 16px;
+    margin-top: -5px;
+}
+.text-line1{
+    width: 160px;
+    height: 1px;
+    background-color: #b3a3a3;
+    margin-left: 12.5vw; 
+}
+.logout-btn{
+    border:none;
+    border-radius: 5px;
+    margin-left: 14.8vw;
+    margin-top: 20px;
+    width: 110px;
+    height: 30px;
+    color: white;
+    background-color: rgb(145, 143, 49);
+}
+.profile-links{
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+}
+
+.profile-links:hover,
+.profile-links:active,
+.profile-links:focus {
+    color: #EC5858;
+    font-weight: 500;
+}
+.userlogoutt-svg{
+    height: 17px;
+    width: 17px;
+    margin-left: -10px;
+    margin-right: 8px;
+    margin-top: -4px;
+}
+.right-section{
+    position: absolute;
+    left: 30vw;
+    top: 100px;
+}
+.details-heading{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.addAddress-link{
+    display: inline;
+    text-decoration: none;
+    position: absolute;
+    left: 33vw;
+    top: 27px;
+    border: 1px solid rgb(158, 154, 154);
+    border-radius: 4px;
+    width: 170px;
+    height: 38px;
+}
+.addAddress-link p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.defAddress-heading{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.defAddress-container{
+    position: relative;
+    width: 45.6vw;
+    min-height:130px ;
+    border: 1px solid rgb(196, 191, 191);
+    box-shadow: 1px 1px 1px 0px rgb(190, 190, 190);
+}
+.name{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(99, 98, 98);
+}
+.address-type{
+    position: absolute;
+    top: 15px;
+    left: 40.5vw;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+    background-color: rgb(245, 240, 240);
+    border-radius: 20px;
+    height: 16px;
+    width: 51px;
+    padding-left: 8px;
+}
+.address{
+    font-size: 14px;
+    margin-left: 15px;
+    color: rgb(124, 122, 122);
+}
+.district{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: -15px; 
+    color: rgb(124, 122, 122);
+}
+.state{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: -15px; 
+    color: rgb(124, 122, 122);
+}
+.mobile{
+    font-size: 13px;
+    margin-left: 15px;
+    /* margin-top: -15px;  */
+    color: rgb(124, 122, 122);
+}
+.actions{
+    width: 45.6vw;
+    border-top: 1px solid rgb(196, 191, 191);
+}
+.edit-btn{
+    text-decoration: none;
+    width: 60px;
+    height: 40px;
+}
+.edit-txt{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10vw;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 15px;
+    width: 60px;
+    height: 40px;
+    color: rgb(70, 70, 228);
+    /* background-color: #EC5858; */
+}
+.remove-btn {
+    position: absolute;
+    text-decoration: none;
+    top: 165px;
+    left: 29vw;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 15px;
+    width: 90px;
+    height: 40px;
+    color: rgb(70, 70, 228);
+    /* background-color: aqua; */
+}
+.middle-line{
+    position: absolute;
+    width: 1px;
+    height: 36px;
+    top: 175px;
+    left: 23vw;
+    background-color:rgb(196, 191, 191);
+}

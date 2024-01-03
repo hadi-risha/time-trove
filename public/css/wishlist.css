@@ -1,0 +1,103 @@
+.main-container{
+    height: 97vh;
+    position: relative;
+}
+.wishlist-head{
+    margin-left: 50px;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.image-box{
+    width: 220px;
+    height: 225px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    border: 1px solid #DDD7D7;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.cross-bkg{
+    position: absolute;
+    background-color: #BEB9B9;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    top: 10px;
+    left: 185px;
+    
+}
+.cross-icon{
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    margin-top: -4px;
+}
+.details-section{
+    border: 1px solid #DDD7D7;
+    position: absolute; 
+    top: 314px;
+    width: 218px;
+    height: 135px;
+    left: 51px;
+}
+.brand-namee{
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.description{
+    margin-left: 6px;
+    margin-top: -15px;
+    font-size: 13px;
+}
+.last-price{
+    margin-left: 6px;
+    margin-top: -15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.og-price{
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+    position: absolute;
+    top: 55px;
+    left: 80px;
+    text-decoration: line-through;
+}
+/* .price-line{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 65px;
+    left: 80px;
+    width: 57px;
+    height: 1px;
+} */
+.discount{
+    font-size: 12px;
+    font-weight: 500;
+    color: #5F7914;
+    position: absolute;
+    top: 55px;
+    left: 151px;
+}
+.second-line{
+    background-color: #DDD7D7;
+    position: absolute;
+    top: 90px;
+    /* left: 80px; */
+    width: 216px;
+    height: 1px;
+}
+.move-txt{
+    color: #F44545;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 60px;
+    padding-top: 10px;
+}
